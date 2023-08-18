@@ -1,0 +1,290 @@
+
+:root {
+    --white-font: #FFFFFF;
+    --black-font: #000000;
+    --color1: #B5BBBB;
+    --color2: #9AD1D4;
+    --color3: #003249;
+
+}
+
+/* Defines the main container size, we are limiting to 72em max and centring in the viewport */
+.main-container {
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Inter;
+    background-color: var(--color1);
+    border-color: var(--color1);
+    
+    /* TODO: set the main font color */
+}
+
+
+
+.banner {
+    background-color: var(--color3);
+    padding: 1em;
+    color: var(--white-font);
+    border-radius: 1em;
+    width: 70em;
+}
+
+.banner-title {
+    font-size: 3em;
+    
+}
+
+.banner-subtitle {
+    font-size: 2.25em;
+
+}
+
+.VR {
+    padding: 1em;
+    width: 70em;
+}
+
+.VR-img {
+    width: 100%;
+    height: 32em;
+    border-radius: 1em;
+}
+
+.Description {
+    background-color: var(--color3);
+    padding: 1em;
+    border-radius: 1em;
+    width: 70em;
+    display: flex;
+    flex-direction: column;
+}
+
+.Des{
+    color: var(--white-font);
+}
+
+.Venn {
+    padding: 1em;
+    width: 70em;
+}
+
+.Venn-img {
+    width: 100%;
+    height: 28em;
+    border-radius: 1em;
+}
+
+.Caption {
+    background-color: var(--color3);
+    padding: 1em;
+    color: var(--white-font);
+    border-radius: 1em;
+    width: 70em;
+    text-align: center;    
+}
+
+.Cap{
+    font-size: 2.25em;
+}
+
+.container {
+    display: flex;
+    width: 72em;
+  }
+
+  .prompt-l, .prompt-r {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid var(--white-font);
+  }
+
+.prompt-r {
+    padding: 1em;
+    width: 50%;
+    height: 36em;
+    border-radius: 1em;
+    float: left;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+}
+
+.prompt-l {
+    padding: 1em;
+    width: 50%;
+    height: 36em;
+    border-radius: 1em;
+    float: left;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.p-image {
+    width: 100%;
+}
+
+
+.AI {
+    padding: 1em;
+    width: 40em;
+}
+
+.AI-img {
+    width: 40em;
+    height: 44em;
+    border-radius: 1em;
+}
+
+.Explanation {
+    background-color: var(--color2);
+    padding: 1em;
+    border-radius: 1em;
+    width: 36em;
+    display: flex;
+    flex-direction: column;
+}
+
+.Exp{
+    color: var(--black-font);
+    font-size: 1.5em;
+}
+
+.Elaboration {
+    background-color: var(--color2);
+    padding: 1em;
+    border-radius: 1em;
+    width: 36em;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Ela{
+    color: var(--black-font);
+    font-size: 2em;
+    
+}
+
+.Fut {
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Fut-img {
+    width: 32em;
+    height: 64em;
+    border-radius: 1em;
+  
+
+
+}
+
+.Reference {
+    background-color: var(--color2);
+    padding: 1em;
+    border-radius: 1em;
+    width: 70em;
+    display: flex;
+    flex-direction: column;
+}
+
+.Ref{
+    color: var(--black-font);
+}
+
+
+
+#banner {
+    grid-area: ban;
+}
+
+#VR1{
+    grid-area: vr1;
+}
+
+#Description1{
+    grid-area: des;
+}
+#Venndi{
+    grid-area: ven;
+}
+
+#Caption1{
+    grid-area: ca1;
+}
+
+
+#prompt1 {
+    grid-area: pr1;
+}
+
+#prompt2 {
+    grid-area: pr2;
+}
+
+#prompt3 {
+    grid-area: pr3;
+}
+
+#prompt4 {
+    grid-area: pr4;
+}
+
+#Caption2{
+    grid-area: ca2;
+}
+#AI1{
+    grid-area: ai1;
+}
+
+#Description2{
+    grid-area: de2;
+}
+#Caption3{
+    grid-area: ca3;
+}
+#Fut1{
+    grid-area: fut;
+}
+#Caption4{
+    grid-area: ca4;
+}
+#AI2{
+    grid-area: ai2;
+}
+#Description3{
+    grid-area: de3;
+}
+#VR2{
+    grid-area: vr2;
+}
+#Caption5{
+    grid-area: ca5;
+}
+#Reference1{}
+
+
+@media (max-width: 48em) {
+    .banner, .VR, .Description, .Venn, .Caption, .prompt-l, .prompt-r, .AI, .Explanation, .Elaboration, .Fut, .Reference {
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 36em) {
+    .container {
+      flex-direction: column; 
+    }
+  
+    .prompt-l, .prompt-r {
+      width: 100%;
+    }
+  }
+
+
